@@ -32,8 +32,9 @@ Create a HTML file to implement form based input and output.
 Publish the website in the given URL.
 
 ## PROGRAM :
-```
+
 math.html
+```
 
 <html>
     <head>
@@ -96,8 +97,9 @@ math.html
     </body>
 </html>
 
+```
 views.py
-
+```
 from django.shortcuts import render
 def calculate_POWER(request):
   context = {}
@@ -117,9 +119,9 @@ def calculate_POWER(request):
     context['resistance'] = resistance
     print("power=", power)
   return render (request,'lenovoapp/math.html',context)
-
+```
 urls.py
-
+```
 from django.contrib import admin
 from django.urls import path
 from lenovoapp import views
